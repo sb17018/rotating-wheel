@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHEEL</title>
+    <link rel="stylesheet" href="./css/styles.css" type="text/css">
+    <script src="./js/circle_generation.js" defer></script>
+    <script src="./js/values_operating.js" defer></script>
+    <script src="./js/listeners.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <div id="inputSquare" class="main-square">
+            <lable for="valueInput">Enter value:</lable>
+            <input type="text" name="valueInput" id="valueInput">
+            <P id="valueExistsDialog"></P>
+        </div>
+        <div id="mainSquare" class="main-square">
+            <div id="indicatorWrapper">
+                <canvas id="indicator" width="20" height="60"></canvas>
+            </div>
+            <div id="spinningSquare">
+                <canvas id="mainCircle" width="400" height="400">
+                </canvas>
+                <div id="textsSquare">
+                </div>
+            </div>
+        </div>
+        <div id="valueEnteredSquare" class="main-square">
+            <lable for="valueEntered">Taking a part:</lable>
+            <ul id="valueEntered"></ul>
+        </div>
+        <button id="spinningBtn">SPIN</button>
+    </main>
+</body>
+
+</html>
